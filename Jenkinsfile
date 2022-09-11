@@ -10,6 +10,8 @@ pipeline {
             steps {
                 echo 'mvn validate'
             }
+
+        }
         stage ('test') {
             steps {
                 echo 'mvn test'
@@ -19,6 +21,10 @@ pipeline {
             steps {
                 echo 'mvn package'
         
-    }
+            }
 
-}
+         }    
+
+
+    }
+}    
