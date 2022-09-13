@@ -35,6 +35,13 @@ pipeline {
             }
 
          }    
+         stage ('deploy') {
+            steps {
+                sh 'tomcat-deploy'
+        
+            }
+
+         }   
 
 
 
